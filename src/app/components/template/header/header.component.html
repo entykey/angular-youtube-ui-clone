@@ -1,0 +1,42 @@
+<mat-toolbar>
+  <div id="start">
+    <button mat-icon-button aria-label="Guide">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <app-logo></app-logo>
+  </div>
+  <div id="center">
+    <div id="search-container">
+      <input
+        type="text"
+        placeholder="Search"
+        autocapitalize="none"
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+      />
+      <button matTooltip="Search">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+    <button color="secondary" mat-mini-fab aria-label="Search with your voice">
+      <mat-icon>mic</mat-icon>
+    </button>
+  </div>
+  <div id="end">
+    <button mat-icon-button matTooltip="Create" aria-label="Create">
+      <mat-icon fontSet="material-icons-outlined">video_call</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      matTooltip="Notifications"
+      aria-label="Notifications"
+    >
+      <mat-icon fontSet="material-icons-outlined">notifications</mat-icon>
+    </button>
+    <img
+      src="https://randomuser.me/api/portraits/men/32.jpg"
+      alt="Avatar photo"
+    />
+  </div>
+</mat-toolbar>
