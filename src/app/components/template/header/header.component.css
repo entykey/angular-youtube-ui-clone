@@ -2,6 +2,8 @@ mat-toolbar {
   justify-content: space-between;
   height: 3.5rem;
   background-color: transparent;
+  position: fixed;
+  top: 0;
 }
 
 mat-toolbar div {

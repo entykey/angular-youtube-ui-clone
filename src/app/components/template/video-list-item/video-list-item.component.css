@@ -1,0 +1,87 @@
+div.video {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+div.thumbnail-container {
+  width: 22.5rem;
+  height: 12.625rem;
+  position: relative;
+}
+
+img.thumbnail {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+
+div.thumbnail-container::after {
+  content: "5:35";
+  position: absolute;
+  display: block;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  background-color: black;
+  color: white;
+  padding-inline: 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+div.info-container {
+  display: flex;
+  gap: 0.75rem;
+}
+
+div.info-container img {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: cover;
+  border-radius: 99999px;
+}
+
+div.info-container span {
+  color: #aaa;
+}
+
+div.info-container b {
+  display: block;
+  display: -webkit-box;
+  max-width: 16.25rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+div.info-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.info-container > div div {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+div.info-container > div div time {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  gap: 0.25rem;
+}
+
+div.info-container > div div time::before {
+  content: "";
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: #aaa;
+}

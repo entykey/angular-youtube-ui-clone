@@ -15,6 +15,8 @@ import { MatInputModule } from "@angular/material/input";
 import { SidebarComponent } from "./components/template/sidebar/sidebar.component";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatDividerModule } from "@angular/material/divider";
+import { VideoListComponent } from './components/template/video-list/video-list.component';
+import { VideoListItemComponent } from './components/template/video-list-item/video-list-item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { MatDividerModule } from "@angular/material/divider";
     HeaderComponent,
     LogoComponent,
     SidebarComponent,
+    VideoListComponent,
+    VideoListItemComponent,
   ],
   imports: [
     BrowserModule,

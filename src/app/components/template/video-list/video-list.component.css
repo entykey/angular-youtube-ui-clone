@@ -1,0 +1,39 @@
+section {
+  position: absolute;
+  left: 248px;
+  margin-top: 3.5rem;
+  z-index: -999;
+}
+
+section div.topics {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+section div.topics button {
+  all: unset;
+  padding: 0.375rem 1rem;
+  border-radius: 0.375rem;
+  background-color: rgba(241, 241, 241, 0.1);
+  cursor: pointer;
+}
+
+section div.topics button:hover {
+  background-color: rgba(241, 241, 241, 0.2);
+}
+
+section div.topics button.active {
+  background-color: white;
+  color: black;
+}
+
+section div.videos {
+  max-height: 100vh;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5rem);
+  gap: 4rem 1rem;
+  justify-content: center;
+  width: calc(100vw - 15.5rem);
+}
